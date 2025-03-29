@@ -91,7 +91,7 @@ SolidOS Data-Kitchen uses `mashlib.js`as a direct import in its source code. Vis
 
 If one wants to use mashlib as a direct import (as a package dependency or script import), one needs to know which global variables and functions are available.
 
-The availability of these global variables depends on how the sub-modules are imported and exported and on where the variables are instantiated. For a basic theoretical read, please see [this resource](https://www.javatpoint.com/javascript-global-variable).
+The availability of these global variables depends on how the sub-modules are imported and exported and on where the variables are instantiated. For a basic theoretical read, please see [this resource](https://www.tpointtech.com/javascript-global-variable).
 
 What does `global` mean in mashlib? We mean the `global object` which depends on different environments. In mashlib, for now, we use the `window` context which means these variables will not work if directly used in non-window contexts such as `Node.js` environments. (This does not mean you cannot use mashlib in `Node.js` environments; just import it through `npm`). At some point, we will switch this to the [`globalThis`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis).
 
